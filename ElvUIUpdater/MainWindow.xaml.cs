@@ -31,15 +31,22 @@ namespace ElvUIUpdater
         public MainWindow()
         {
             InitializeComponent();
-            _appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
-            var info = Directory.CreateDirectory(Path.Combine(_appDataFolder, ElvUiUpdaterFolderAppend));
-            _operationPath = info.FullName;
-            _initFilePath = Path.Combine(_operationPath, "init.txt");
-            TryReadInitfile();
-            UpdateButtonState();
-            if(_autoUpdate)
+            try
             {
-                UpdateElvui();
+                _appDataFolder = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData);
+                var info = Directory.CreateDirectory(Path.Combine(_appDataFolder, ElvUiUpdaterFolderAppend));
+                _operationPath = info.FullName;
+                _initFilePath = Path.Combine(_operationPath, "init.txt");
+                TryReadInitfile();
+                UpdateButtonState();
+                if (_autoUpdate)
+                {
+                    UpdateElvui();
+                }
+            }
+            catch (Exception e)
+            {
+                MessageWindow.Text += e.Message;
             }
         }
 
@@ -107,7 +114,14 @@ namespace ElvUIUpdater
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            UpdateElvui();
+            try
+            {
+                UpdateElvui();
+            }
+            catch (Exception ex)
+            {
+                MessageWindow.Text += ex.Message;
+            }
         }
 
         private void MoveElvuiToAddon()

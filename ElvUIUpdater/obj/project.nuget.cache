@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "12HPkaLeV947hswcjeyyA0iyKPNhpBwiFjy3LRMFuYiy2YWBqWu1upC3vO1YIfxz/5Avh4vooo0YPmU+S3QYsQ==",
+  "dgSpecHash": "ZrDu4Knd0x4HAPrr3Hx93oOFRYhd7gHdC+YZD2AP1jqHtbwBmc8a7ONpcEbVvsQuxYqqOgAcIvvFHFM21TrDdQ==",
   "success": true,
-  "projectFilePath": "D:\\develop\\ElvUIUpdater\\ElvUIUpdater\\ElvUIUpdater.csproj",
+  "projectFilePath": "D:\\develop\\ElvuiUpdater\\ElvUIUpdater\\ElvUIUpdater.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\timbo\\.nuget\\packages\\libgit2sharp\\0.26.2\\libgit2sharp.0.26.2.nupkg.sha512",
     "C:\\Users\\timbo\\.nuget\\packages\\libgit2sharp.nativebinaries\\2.0.306\\libgit2sharp.nativebinaries.2.0.306.nupkg.sha512"
