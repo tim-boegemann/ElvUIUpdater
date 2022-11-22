@@ -156,8 +156,7 @@ namespace ElvUIUpdater
 
         private void CreateElvUiRepo()
         {
-            Directory.CreateDirectory(_operationPath);
-            _gitWrapper.Clone(_operationPath);
+            _gitWrapper.Clone(Path.Combine(_operationPath, ElvUiFolderAppend));
         }
 
         private void Window_Closed(object sender, EventArgs e)
