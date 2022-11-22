@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="WindowsFormsIntegration.Design">
+      <HintPath>C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\WindowsFormsIntegration.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsFormsIntegration.Package">
+      <HintPath>C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\WindowsFormsIntegration.Package.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibGit2Sharp" Version="0.26.2" />
+  </ItemGroup>
+
+</Project>
